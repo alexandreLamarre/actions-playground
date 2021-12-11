@@ -1,0 +1,28 @@
+name: Valgrind Memory Checker
+on: 
+  push:
+    branches : 
+      - main
+  pull_request:
+    branches:
+      - main
+  # page_build: on pages build
+  # release
+    #types : 
+      # - created
+  
+  # #Scheduled events
+  # schedule:
+  #  - cron:  '30 5,17 * * *' # triggers the workflow every day at 5:30 and 17:30 UTC
+
+# on:
+#   workflow_call # call this action only when called by another action
+
+  
+jobs:
+  Valgrind-Memory-Checker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "bla"
+
+
